@@ -22,5 +22,7 @@ MRAID Banner ad?
     }
 
     addLog("hoge");
-    waitReady();
+    const msg = window.mraid ? "exists" : "dose not exist";
+    addLog("mraid obj " + msg);
+    // waitReady();
 </script>
