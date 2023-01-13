@@ -3,9 +3,9 @@ MRAID Banner ad?
 <div id="log-out" style="background-color:blue;">
 </div>
 <script>
-    function addLog(str){
+    function addLog(str) {
         var l = document.getElementById("log-out");
-        l.innerHTML = str + l.innerHTML;
+        l.innerHTML = " " + str + l.innerHTML;
     }
 
     function waitReady() {
@@ -24,5 +24,9 @@ MRAID Banner ad?
     addLog("hoge");
     const msg = window.mraid ? "exists" : "dose not exist";
     addLog("mraid obj " + msg);
+    setTimeout((h) => {
+        const msg = window.mraid ? "exists" : "dose not exist";
+        addLog("mraid obj " + msg)
+    }, 2 * 1000);
     // waitReady();
 </script>
