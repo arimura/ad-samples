@@ -1,10 +1,11 @@
 (function startViewability(){
-    console.log("start viewability");
+    const topConsole = window.top.console;
     const mraid = window.top.mraid;
+    topConsole.log("start viewability");
     if(mraid.getState() === "default"){
         mraid.addEventListener(
             'exposureChange', (exposedPercentage, visibleRectangle, occlusionRectangles) => {
-                    console.log("exposedPercentage: " + exposedPercentage);
+                    topConsole.log("exposedPercentage: " + exposedPercentage);
                 }
         );
     }
