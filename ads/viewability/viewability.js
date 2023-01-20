@@ -15,8 +15,8 @@
         //     }
         // );
         mraid.addEventListener(
-            'viewableChange',(isViewa) => {
-                topConsole.log("viewableChange :", isViewa);
+            'viewableChange',(isViewable) => {
+                topConsole.log("viewableChange :" + isViewable);
             }
         );
     }
