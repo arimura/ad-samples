@@ -9,11 +9,11 @@
     const mraid = window.top.mraid;
     topConsole.log("start viewability");
     if (mraid.getState() === "default") {
-        // mraid.addEventListener(
-        //     'exposureChange', (exposedPercentage, visibleRectangle, occlusionRectangles) => {
-        //         topConsole.log("exposureChange: " + exposedPercentage);
-        //     }
-        // );
+        mraid.addEventListener(
+            'exposureChange', (exposedPercentage, visibleRectangle, occlusionRectangles) => {
+                topConsole.log("exposureChange: " + exposedPercentage);
+            }
+        );
         mraid.addEventListener(
             'viewableChange',(isViewable) => {
                 topConsole.log("viewableChange :" + isViewable);
