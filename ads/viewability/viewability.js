@@ -11,13 +11,13 @@
     if (mraid.getState() === "default") {
         // mraid.addEventListener(
         //     'exposureChange', (exposedPercentage, visibleRectangle, occlusionRectangles) => {
-        //         topConsole.log("exposedPercentage: " + exposedPercentage);
+        //         topConsole.log("exposureChange: " + exposedPercentage);
         //     }
         // );
         mraid.addEventListener(
             'viewableChange',(isViewa) => {
                 topConsole.log("viewableChange :", isViewa);
             }
-        )
+        );
     }
 })();
